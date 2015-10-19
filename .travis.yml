@@ -15,6 +15,9 @@ before_install:
 - docker ps -a
 - docker inspect brooklyn
 
+install:
+- mvn install -DskipTests=true -X
+
 branches:
   except:
   - travis
